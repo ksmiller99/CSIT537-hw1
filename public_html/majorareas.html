@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2017 World Congress CS-IT Conferences - Home</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav id="nav">
+                <ul id="navigation">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./speakers.html">Keynote Speakers</a></li>
+                    <li><a href="#">Conference Information &raquo;</a>
+                        <ul>
+                            <li><a href="#">General Information &raquo;</a>
+                                <ul>
+                                    <li><a href="./abouttheconference.html">About the Conference</a></li>
+                                    <li><a href="./conferencefee.html">Conference Fee</a></li>
+                                    <li><a href="./hotelinformation.html">Hotel Information</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./importantdates.html">Important Dates</a></li>
+                            <li><a href="./conferenceprogram.html">Conference Program</a></li>
+                            <li><a href="./guidelines.html">Guidelines</a></li>
+                            <li><a href="./majorareas.html">Major Subject Areas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Papers  &raquo;</a>
+                        <ul>
+                            <li><a href="./callforpapers.html">Call for Papers</a></li>
+                            <li><a href="./papersubmissions.html">Paper Submission</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./reviewerlogin.html">Reviewer Login</a></li>
+                    <li><a href="./onlineregistration.html">Online Registration</a></li>
+                    <li><a href="./commentsandfeedback.html">Comments & Feedback</a></li>
+                </ul>
+            </nav>
+            <p> &nbsp </p>
+        </div><!--end wrapper-->
+        <h2>Search Special Interest Groups by Knowledge Area</h2>
+        <h3>Knowledge Areas</h3>
+        <button class="accordion">Applications</button>
+        <div class="panel">
+            <p>Applied Computing</p>
+            <p>Embedded Systems</p>
+            <p>Bioinformatics, Computational Biology and Biomedical Informatics</p>
+            <p>High Performance Computing</p>
+            <p>Multimedia Systems</p>
+            <p>Mobility of Systems, Users, Data & Comp</p>
+            <p>Symbolic & Algebraic Manipulation</p>
+            <p>Spatial Information</p>
+            <p>Electronic Commerce</p>
+        </div>
+        <button class="accordion">Artificial Intelligence</button>
+        <div class="panel">
+            <p>Artificial Intelligence</p>
+            <p>Genetic and Evolutionary Computation</p>
+            <p>Information Retrieval</p>
+            <p>Knowledge Discovery in Data</p>
+            <p>ACM Hypertext, Hypermedia and Web</p>
+            <p>Electronic Commerce</p>
+        </div>
+        <button class="accordion">Digital Content</button>
+        <div class="panel">
+            <p>Information Retrieval</p>
+            <p>Knowledge Discovery in Data</p>
+            <p>Measurement and Evaluation</p>
+            <p>Multimedia Systems</p>
+            <p>Management of Data</p>
+            <p>Security, Audit and Control</p>
+            <p>Spatial Information</p>
+            <p>ACM Hypertext, Hypermedia and Web</p>
+        </div>
+        <button class="accordion">Education</button>
+        <div class="panel">
+            <p>Computers and Society</p>
+            <p>Computer Science Education</p>
+            <p>Information Technology Education</p>
+            <p>University & College Computing Services</p>
+        </div>
+        <button class="accordion">Hardware Design</button>
+        <div class="panel">
+            <p>Embedded Systems</p>
+            <p>Design Automation</p>
+            <p>Microarchitecture</p>
+            <p>Mobility of Systems, Users, Data & Comp</p>
+        </div>
+        <button class="accordion">Interaction</button>
+        <div class="panel">
+            <p>Accessible Computing</p>
+            <p>Computer-Human Interaction</p>
+            <p>Design of Communication</p>
+            <p>Computer Graphics</p>
+            <p>Multimedia Systems</p>
+            <p>Security, Audit and Control</p>
+        </div>
+        <button class="accordion">Networking</button>
+        <div class="panel">
+            <p>Embedded Systems</p>
+            <p>Data Communication</p>
+            <p>Measurement and Evaluation</p>
+            <p>Multimedia Systems</p>
+            <p>Mobility of Systems, Users, Data & Comp</p>
+            <p>Operating Systems</p>
+            <p>Security, Audit and Control</p>
+            <p>ACM Hypertext, Hypermedia and Web</p>
+        </div>
+        <button class="accordion">Ops and Management</button>
+        <div class="panel">
+            <p>Management Information Systems</p>
+            <p>University & College Computing Services</p>
+        </div>
+        <button class="accordion">Performance</button>
+        <div class="panel">
+            <p>Computer Architecture</p>
+            <p>High Performance Computing</p>
+            <p>Measurement and Evaluation</p>
+            <p>Microarchitecture</p>
+            <p>Programming Languages</p>
+        </div>
+        <button class="accordion">Software</button>
+        <div class="panel">
+            <p>Ada Programming Language</p>
+            <p>Embedded Systems</p>
+            <p>Design of Communication</p>
+            <p>Computer Graphics</p>
+            <p>Multimedia Systems</p>
+            <p>Operating Systems</p>
+            <p>Programming Languages</p>
+            <p>Security, Audit and Control</p>
+            <p>Simulation</p>
+            <p>Software Engineering</p>
+            <p>ACM Hypertext, Hypermedia and Web</p>
+        </div>
+        <button class="accordion">Theory</button>
+        <div class="panel">
+            <p>Algorithms & Computation Theory</p>
+            <p>Logic and Computation</p>
+            <p>Symbolic & Algebraic Manipulation</p>
+            <p>Electronic Commerce</p>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].onclick = function () {
+                    this.classList.toggle("active");
+                    this.nextElementSibling.classList.toggle("show");
+                }
+            }
+        </script>
+
+    </body>
+</html>

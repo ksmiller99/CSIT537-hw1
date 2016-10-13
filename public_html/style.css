@@ -1,0 +1,293 @@
+/* css reset - makes the layout looking good in all browsers */
+/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline; }*/
+
+/*article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        display: block; }*/
+
+/*body {
+        line-height: 1; 
+        font:12px/20px Arial;
+        background:#e0f3ff; 
+        background:url(pattern.png) repeat scroll 0 0;
+        }*/
+
+/*ol, ul {
+        list-style: none; }*/
+
+/*.center {
+        margin:50px 0 0 190px;
+        width:240px;}*/
+
+/*h1 { font-size:30px; margin:130px 0 0 0; text-align:center;
+        font-weight:bold;
+        color:#777777;
+        text-shadow: 1px 2px 0 #ffffff, 2px 4px 0 #d6d6d6;
+}*/
+
+/*#bar {
+        background-color: #2f2f2f;
+        bottom: 0;
+        border-top:2px solid #eeeeee;
+        height: 50px;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 100000;
+        display:block;
+}*/
+
+/*#innerbar {
+        width:900px;
+        margin:0 auto;
+}*/
+
+/*#innerbar h2 {
+        color: #bdbdbd;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 13px 0 0;
+        text-align:center;
+        margin:0;
+        padding-top:16px;
+}*/
+
+/*#innerbar a {
+        color:#fff;
+}*/
+
+/*#wrapper{
+        width:620px;
+        margin:0 auto;
+}*/
+
+#nav {
+    /*	position:relative;*/
+    /*	width:620px;*/
+    margin:0 auto;
+    margin-top:10px;
+    padding:0px;
+}
+
+ul#navigation {
+    margin:0px auto;
+    position:relative;
+    float:left;
+    /*	border-left:1px solid #c4dbe7;*/
+    border-right:1px solid #c4dbe7;
+}
+
+ul#navigation li {
+    display:inline;
+    font-size:12px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    float:left;
+    position:relative;
+    border-top:1px solid #c4dbe7;
+    border-bottom:2px solid #c4dbe7;
+}
+
+ul#navigation li a {
+    padding:10px 5px;
+    color:#616161;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border-right:1px solid #fff;
+    border-left:1px solid #C2C2C2;
+    border-top:1px solid #fff;
+    background: #f5f5f5;
+
+    -webkit-transition:color 0.2s linear, background 0.2s linear;	
+    -moz-transition:color 0.2s linear, background 0.2s linear;	
+    -o-transition:color 0.2s linear, background 0.2s linear;	
+    transition:color 0.2s linear, background 0.2s linear;	
+}
+
+ul#navigation li a:hover {
+    background:#f8f8f8;
+    color:#282828;
+}
+
+ul#navigation li:hover > a {
+    background:#fff;
+}
+
+/* Drop-Down Navigation */
+ul#navigation li:hover > ul
+{
+    visibility:visible;
+    opacity:1;
+}
+
+ul#navigation ul, ul#navigation ul li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    visibility:hidden;
+    position: absolute;
+    z-index: 99999;
+    width:180px;
+    background:#f8f8f8;
+    box-shadow:1px 1px 3px #ccc;
+    opacity:0;
+    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear; 
+    -moz-transition:opacity 0.2s linear, visibility 0.2s linear; 
+    -o-transition:opacity 0.2s linear, visibility 0.2s linear; 
+    transition:opacity 0.2s linear, visibility 0.2s linear; 	
+}
+
+ul#navigation ul {
+    top: 43px;
+    left: 1px;
+}
+
+ul#navigation ul li ul {
+    top: 0;
+    left: 181px;
+}
+
+ul#navigation ul li {
+    clear:both;
+    width:100%;
+    border:0 none;
+    border-bottom:1px solid #c9c9c9;
+}
+
+ul#navigation ul li a {
+    background:none;
+    padding:7px 15px;
+    color:#616161;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border:0 none;
+    float:left;
+    clear:both;
+    width:150px;
+}
+
+/*ul#navigation li a.first {
+        border-left: 0 none;
+}*/
+
+/*ul#navigation li a.last {
+        border-right: 0 none;
+}*/
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    padding-right: 10px;
+    color: #777;
+    float: left;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+img.wrap {
+    float: left;
+    padding-right: 20px;
+    width: 10%;
+    transition: all .2s ease-in-out; 
+}
+
+img.wrap:hover { 
+    transform: scale(1.1); 
+}
+
+img.grow { transition: all .2s ease-in-out; }
+img.grow:hover { transform: scale(1.1); }
+
+.reTable-1 {
+    BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-COLLAPSE: collapse; FONT-FAMILY: Tahoma; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.reTable-1 TR.reTableHeaderRow-1 {
+    TEXT-ALIGN: left; PADDING-BOTTOM: 10px; LINE-HEIGHT: 14pt; TEXT-TRANSFORM: capitalize; FONT-STYLE: normal; MARGIN: 10px; PADDING-LEFT: 10px; BORDER-SPACING: 10px; PADDING-RIGHT: 10px; FONT-FAMILY: Tahoma; BACKGROUND: #d6e8ff; COLOR: #3f4d6b; FONT-SIZE: 10pt; VERTICAL-ALIGN: top; FONT-WEIGHT: bold; PADDING-TOP: 10px
+}
+.reTable-1 TD.reTableHeaderFirstCol-1 {
+    PADDING-BOTTOM: 0in; LINE-HEIGHT: 14pt; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; COLOR: #3a4663; PADDING-TOP: 0in
+}
+.reTable-1 TD.reTableHeaderLastCol-1 {
+    PADDING-BOTTOM: 0in; LINE-HEIGHT: 14pt; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; COLOR: #3a4663; PADDING-TOP: 0in
+}
+.reTable-1 TD.reTableHeaderOddCol-1 {
+    PADDING-BOTTOM: 0in; LINE-HEIGHT: 14pt; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; COLOR: #3a4663; PADDING-TOP: 0in
+}
+.reTable-1 TD.reTableHeaderEvenCol-1 {
+    PADDING-BOTTOM: 0in; LINE-HEIGHT: 14pt; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; COLOR: #3a4663; PADDING-TOP: 0in
+}
+.reTable-1 TR.reTableOddRow-1 {
+    BACKGROUND-COLOR: #f2f3f4; COLOR: #666666; FONT-SIZE: 10pt; VERTICAL-ALIGN: top
+}
+.reTable-1 TR.reTableEvenRow-1 {
+    BACKGROUND-COLOR: #e7ebf7; COLOR: #666666; FONT-SIZE: 10pt; VERTICAL-ALIGN: top
+}
+.reTable-1 TD.reTableFirstCol-1 {
+    PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in
+}
+.reTable-1 TD.reTableLastCol-1 {
+    PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in
+}
+.reTable-1 TD.reTableOddCol-1 {
+    PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in
+}
+.reTable-1 TD.reTableEvenCol-1 {
+    PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in
+}
+.reTable-1 TR.reTableFooterRow-1 {
+    LINE-HEIGHT: 11pt; BACKGROUND-COLOR: #d6e8ff; FONT-FAMILY: Tahoma; COLOR: #4a5a80; FONT-SIZE: 10pt; FONT-WEIGHT: 500
+}
+.reTable-1 TD.reTableFooterFirstCol-1 {
+    TEXT-ALIGN: left; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: gray 1pt solid; PADDING-TOP: 0in
+}
+.reTable-1 TD.reTableFooterLastCol-1 {
+    TEXT-ALIGN: left; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: gray 1pt solid; PADDING-TOP: 0in
+}
+.reTable-1 TD.reTableFooterOddCol-1 {
+    TEXT-ALIGN: left; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: gray 1pt solid; PADDING-TOP: 0in
+}
+.reTable-1 TD.reTableFooterEvenCol-1 {
+    TEXT-ALIGN: left; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: gray 1pt solid; PADDING-TOP: 0in
+}
